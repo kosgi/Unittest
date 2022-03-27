@@ -1,0 +1,50 @@
+ bbfwd1-mtlab	/var/log/mspfwd.log	 Mar 27 03:19:01 bbfwd1-mtlab mspfwd.py[27946]: DEBUG: Received error(xid=3) NoNodeError((), {})	"Count:"9804
+
+ bbfwd2-mtlab	/var/log/mspfwd.log	 Mar 27 03:26:01 bbfwd2-mtlab mspfwd.py[20395]: DEBUG: Sending request(xid=2): GetChildren(path='/mspfwd/sftp/errors', watcher=None)	"Count:"9968
+
+ bbfwd3-mtlab	/var/log/mspfwd.log	 Mar 27 03:31:13 bbfwd3-mtlab mspfwd.py[9372]: DEBUG: <BrokerConnection node_id=2 host=bsap2-mtlab:9092 <connected> [IPv4 ('10.241.101.2', 9092)]> Response 991 (182.183027267 ms): ProduceResponse_v3(topics=[(topic=u'BB', partitions=[(partition=5, error_code=0, offset=733753, timestamp=-1)])], throttle_time_ms=0)	"Count:"10050
+
+ firstnet1-mtlab	/var/log/mspfwd.log	 Mar 27 03:24:01 firstnet1-mtlab mspfwd.py[24544]: DEBUG: Received error(xid=3) NoNodeError((), {})	"Count:"10492
+
+firstnet1-mtlab	/var/log/messages	 Mar 27 03:25:13 firstnet1-mtlab mspfwd: msp2txt: ASN1 parsing error 1	"Count:"2419
+
+ firstnet2-mtlab	/var/log/mspfwd.log	 Mar 27 03:42:01 firstnet2-mtlab mspfwd.py[10953]: DEBUG: Received error(xid=3) NoNodeError((), {})	"Count:"10684
+
+firstnet2-mtlab	/var/log/messages	 Mar 27 03:44:22 firstnet2-mtlab mspfwd: msp2txt: ASN1 parsing error 1	"Count:"1954
+
+ firstnet3-mtlab	/var/log/mspfwd.log	 Mar 27 03:18:01 firstnet3-mtlab mspfwd.py[26429]: DEBUG: Received error(xid=3) NoNodeError((), {})	"Count:"11102
+
+firstnet3-mtlab	/var/log/messages	 Mar 27 03:20:28 firstnet3-mtlab mspfwd: msp2txt: ASN1 parsing error 1	"Count:"2043
+
+ERROR LOG: ssh: Could not resolve hostname blackfox4-mtlab: Name or service not known
+
+ERROR LOG: ssh: Could not resolve hostname blackfox5-mtlab: Name or service not known
+
+ mspfwd1-mtlab	/var/log/mspfwd.log	 Mar 27 03:19:02 mspfwd1-mtlab mspfwd.py[7569]: DEBUG: Received error(xid=3) NoNodeError((), {})	"Count:"3741
+
+ mspfwd2-mtlab	/var/log/mspfwd.log	 Mar 27 03:13:02 mspfwd2-mtlab mspfwd.py[29877]: DEBUG: Received error(xid=3) NoNodeError((), {})	"Count:"2151
+
+ mspfwd3-mtlab	/var/log/mspfwd.log	 Mar 27 03:19:02 mspfwd3-mtlab mspfwd.py[30502]: DEBUG: Received error(xid=3) NoNodeError((), {})	"Count:"2131
+
+ mspfwd4-mtlab	/var/log/mspfwd.log	 Mar 27 03:25:01 mspfwd4-mtlab mspfwd.py[30439]: DEBUG: Received error(xid=4) NoNodeError((), {})	"Count:"3625
+
+mspfwd4-mtlab	/var/log/messages	 Mar 27 11:56:08 mspfwd4-mtlab mspfwd: 2022-03-27 11:56:08,898 - WARNING: Got error produce response on topic-partition TopicPartition(topic='MSP', partition=3), retrying (2 attempts left). Error: Cancelled: <BrokerConnection node_id=1 host=bsap1-mtlab:9092 <connected> [IPv4 ('10.241.101.1', 9092)]>	"Count:"6
+
+ mspfwd5-mtlab	/var/log/mspfwd.log	 Mar 27 03:19:02 mspfwd5-mtlab mspfwd.py[9290]: DEBUG: Received error(xid=3) NoNodeError((), {})	"Count:"2139
+
+ mspfwd6-mtlab	/var/log/mspfwd.log	 Mar 27 03:13:02 mspfwd6-mtlab mspfwd.py[20501]: DEBUG: Received error(xid=3) NoNodeError((), {})	"Count:"3631
+
+ blackfox1-mtlab	/var/log/mspfwd.log	 Mar 27 03:23:29 blackfox1-mtlab mspfwd.py[3740]: DEBUG: <BrokerConnection node_id=1 host=bsap1-mtlab:9092 <connected> [IPv4 ('10.241.101.1', 9092)]> Response 467 (5650.08711815 ms): ProduceResponse_v3(topics=[(topic=u'FirstNet', partitions=[(partition=13, error_code=0, offset=706716, timestamp=-1)])], throttle_time_ms=0)	"Count:"11637
+
+ blackfox2-mtlab	/var/log/mspfwd.log	 Mar 27 03:26:02 blackfox2-mtlab mspfwd.py[12709]: DEBUG: Received error(xid=4) NoNodeError((), {})	"Count:"11938
+
+blackfox2-mtlab	/var/log/messages	 Mar 27 09:41:13 blackfox2-mtlab mspfwd: raise BsaException('scp failed in scp_download, stderr = ' + error)	"Count:"24
+
+ blackfox3-mtlab	/var/log/mspfwd.log	 Mar 27 03:33:01 blackfox3-mtlab mspfwd.py[9659]: DEBUG: Received error(xid=4) NoNodeError((), {})	"Count:"11407
+
+blackfox3-mtlab	/var/log/messages	 Mar 27 04:58:21 blackfox3-mtlab mspfwd: 140482171307920:error:02001002:system library:fopen:No such file or directory:bss_file.c:402:fopen('/dev/shm/ss-8791f158-3e40-41d3-a135-ed3f1baa7c81.crt','r')	"Count:"39
+
+ERROR LOG: ssh: Could not resolve hostname blackfox4-mtlab: Name or service not known
+
+ERROR LOG: ssh: Could not resolve hostname blackfox5-mtlab: Name or service not known
+
