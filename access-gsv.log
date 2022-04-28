@@ -1,0 +1,45 @@
+Script started at: 04-27-2022 03:00:01 AM UTC and ended at: 04-27-2022 03:00:26 AM UTC
+ bbfwd1-gsv	/var/log/mspfwd.log	 Apr 26 18:46:16 bbfwd1-gsv mspfwd.py[28691]: ERROR: Unhandled exception#012Traceback (most recent call last):#012  File "/opt/bsa/bin/mspfwd.py", line 2533, in main#012	Count:9
+
+bbfwd1-gsv	/var/log/messages	 Apr 25 01:01:25 bbfwd1-gsv mspfwd.py[21507]: ERROR: Unhandled exception#012Traceback (most recent call last):#012  File "/opt/bsa/bin/mspfwd.py", line 2534, in main#012	Count:12
+
+ bbfwd2-gsv	/var/log/mspfwd.log	 Apr 26 18:46:16 bbfwd2-gsv mspfwd.py[3784]: ERROR: Unhandled exception#012Traceback (most recent call last):#012  File "/opt/bsa/bin/mspfwd.py", line 2533, in main#012	Count:8
+
+bbfwd2-gsv	/var/log/messages	 Apr 25 20:53:20 bbfwd2-gsv mspfwd: 2022-04-25 20:53:20,056 - ERROR: send to kafka failed with exception, infile_name=/dev/shm/proto_2022-04-25-20-52-30-506.proto.gz size=40214918 exception=KafkaTimeoutError: Failed to	Count:13
+
+ bbfwd3-gsv	/var/log/mspfwd.log	 Apr 26 18:46:16 bbfwd3-gsv mspfwd.py[24361]: ERROR: Unhandled exception#012Traceback (most recent call last):#012  File "/opt/bsa/bin/mspfwd.py", line 2533, in main#012	Count:8
+
+bbfwd3-gsv	/var/log/messages	 Apr 26 18:46:16 bbfwd3-gsv mspfwd.py[24361]: ERROR: Unhandled exception#012Traceback (most recent call last):#012  File "/opt/bsa/bin/mspfwd.py", line 2533, in main#012	Count:9
+
+ bbfwd4-gsv	/var/log/mspfwd.log	 Apr 26 18:43:44 bbfwd4-gsv mspfwd.py[5011]: ERROR: Unhandled exception#012Traceback (most recent call last):#012  File "/opt/bsa/bin/mspfwd.py", line 2554, in main#012	Count:9
+
+bbfwd4-gsv	/var/log/messages	 Apr 26 18:43:44 bbfwd4-gsv mspfwd.py[5011]: ERROR: Unhandled exception#012Traceback (most recent call last):#012  File "/opt/bsa/bin/mspfwd.py", line 2554, in main#012	Count:11
+
+ bbfwd5-gsv	/var/log/mspfwd.log	 Apr 26 18:43:46 bbfwd5-gsv mspfwd.py[13768]: ERROR: Unhandled exception#012Traceback (most recent call last):#012  File "/opt/bsa/bin/mspfwd.py", line 2554, in main#012	Count:9
+
+bbfwd5-gsv	/var/log/messages	 Apr 26 18:43:46 bbfwd5-gsv mspfwd.py[13768]: ERROR: Unhandled exception#012Traceback (most recent call last):#012  File "/opt/bsa/bin/mspfwd.py", line 2554, in main#012	Count:11
+
+ mspfwd1-gsv	/var/log/mspfwd.log	 Apr 26 18:34:17 mspfwd1-gsv mspfwd.py[1392]: ERROR: Unhandled exception#012Traceback (most recent call last):#012  File "/opt/bsa/bin/mspfwd.py", line 2533, in main#012	Count:3
+
+mspfwd1-gsv	/var/log/messages	 Apr 26 18:34:17 mspfwd1-gsv mspfwd.py[1392]: ERROR: Unhandled exception#012Traceback (most recent call last):#012  File "/opt/bsa/bin/mspfwd.py", line 2533, in main#012	Count:4
+
+ mspfwd2-gsv	/var/log/mspfwd.log	 Apr 26 18:34:16 mspfwd2-gsv mspfwd.py[28399]: ERROR: Unhandled exception#012Traceback (most recent call last):#012  File "/opt/bsa/bin/mspfwd.py", line 2533, in main#012	Count:4
+
+mspfwd2-gsv	/var/log/messages	 Apr 25 04:10:13 mspfwd2-gsv mspfwd: 2022-04-25 04:10:13,620 - ERROR: Sftp error: sftp gsvnz02 exit code 256	Count:9
+
+ mspfwd3-gsv	/var/log/mspfwd.log	 Apr 26 18:35:17 mspfwd3-gsv mspfwd.py[570]: ERROR: Unhandled exception#012Traceback (most recent call last):#012  File "/opt/bsa/bin/mspfwd.py", line 2533, in main#012	Count:3
+
+mspfwd3-gsv	/var/log/messages	 Apr 24 04:10:28 mspfwd3-gsv mspfwd: 2022-04-24 04:10:28,038 - ERROR: Sftp error: sftp gsvnz02 exit code 256	Count:8
+
+ sundance1-gsv	/var/log/mspfwd.log	 Apr 26 18:57:31 sundance1-gsv mspfwd.py[12110]: ERROR: scp failed in scp_upload, return code = 1	Count:8
+
+sundance1-gsv	/var/log/messages	 Apr 26 18:57:31 sundance1-gsv mspfwd.py[12110]: ERROR: scp failed in scp_upload, return code = 1	Count:13
+
+ sundance2-gsv	/var/log/mspfwd.log	 Apr 26 18:57:34 sundance2-gsv mspfwd.py[28826]: ERROR: scp failed in scp_upload, return code = 1	Count:8
+
+sundance2-gsv	/var/log/messages	 Apr 26 18:57:34 sundance2-gsv mspfwd.py[28826]: ERROR: scp failed in scp_upload, return code = 1	Count:13
+
+ sundance3-gsv	/var/log/mspfwd.log	 Apr 26 19:00:16 sundance3-gsv auditfwd.py[18555]: ERROR: Unhandled exception#012Traceback (most recent call last):#012  File "/opt/bsa/bin/auditfwd.py", line 390, in main#012	Count:5
+
+sundance3-gsv	/var/log/messages	 Apr 26 01:01:47 sundance3-gsv mspfwd.py[22782]: ERROR: Unhandled exception#012Traceback (most recent call last):#012  File "/opt/bsa/bin/mspfwd.py", line 2534, in main#012	Count:7
+

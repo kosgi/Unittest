@@ -1,0 +1,61 @@
+Script started at: 04-27-2022 03:00:01 AM UTC and ended at: 04-27-2022 03:00:34 AM UTC
+ bbfwd1-bth	/var/log/mspfwd.log	 Apr 26 18:45:17 bbfwd1-bth mspfwd.py[4775]: ERROR: Unhandled exception#012Traceback (most recent call last):#012  File "/opt/bsa/bin/mspfwd.py", line 2533, in main#012	Count:9
+
+bbfwd1-bth	/var/log/messages	 Apr 26 18:45:17 bbfwd1-bth mspfwd.py[4775]: ERROR: Unhandled exception#012Traceback (most recent call last):#012  File "/opt/bsa/bin/mspfwd.py", line 2533, in main#012	Count:10
+
+ bbfwd2-bth	/var/log/mspfwd.log	 Apr 26 18:45:16 bbfwd2-bth mspfwd.py[311]: ERROR: Unhandled exception#012Traceback (most recent call last):#012  File "/opt/bsa/bin/mspfwd.py", line 2533, in main#012	Count:9
+
+bbfwd2-bth	/var/log/messages	 Apr 26 18:45:16 bbfwd2-bth mspfwd.py[311]: ERROR: Unhandled exception#012Traceback (most recent call last):#012  File "/opt/bsa/bin/mspfwd.py", line 2533, in main#012	Count:10
+
+ bbfwd3-bth	/var/log/mspfwd.log	 Apr 26 18:45:17 bbfwd3-bth mspfwd.py[19798]: ERROR: Unhandled exception#012Traceback (most recent call last):#012  File "/opt/bsa/bin/mspfwd.py", line 2533, in main#012	Count:9
+
+bbfwd3-bth	/var/log/messages	 Apr 25 01:01:42 bbfwd3-bth mspfwd.py[27271]: ERROR: Unhandled exception#012Traceback (most recent call last):#012  File "/opt/bsa/bin/mspfwd.py", line 2534, in main#012	Count:12
+
+ firstnet1-bth	/var/log/mspfwd.log	 Apr 26 18:20:06 firstnet1-bth mspfwd.py[846]: ERROR: Unhandled exception#012Traceback (most recent call last):#012  File "/opt/bsa/bin/mspfwd.py", line 2570, in main#012	Count:1
+
+firstnet1-bth	/var/log/messages	 Apr 26 18:20:06 firstnet1-bth mspfwd.py[846]: ERROR: Unhandled exception#012Traceback (most recent call last):#012  File "/opt/bsa/bin/mspfwd.py", line 2570, in main#012	Count:2
+
+ firstnet2-bth	/var/log/mspfwd.log	 Apr 26 18:20:06 firstnet2-bth mspfwd.py[13167]: ERROR: Unhandled exception#012Traceback (most recent call last):#012  File "/opt/bsa/bin/mspfwd.py", line 2570, in main#012	Count:1
+
+firstnet2-bth	/var/log/messages	 Apr 26 18:20:06 firstnet2-bth mspfwd.py[13167]: ERROR: Unhandled exception#012Traceback (most recent call last):#012  File "/opt/bsa/bin/mspfwd.py", line 2570, in main#012	Count:2
+
+ firstnet3-bth	/var/log/mspfwd.log	 Apr 26 18:20:06 firstnet3-bth mspfwd.py[2209]: ERROR: Unhandled exception#012Traceback (most recent call last):#012  File "/opt/bsa/bin/mspfwd.py", line 2570, in main#012	Count:1
+
+firstnet3-bth	/var/log/messages	 Apr 26 18:20:06 firstnet3-bth mspfwd.py[2209]: ERROR: Unhandled exception#012Traceback (most recent call last):#012  File "/opt/bsa/bin/mspfwd.py", line 2570, in main#012	Count:2
+
+ mspfwd1-bth	/var/log/mspfwd.log	 Apr 26 18:33:16 mspfwd1-bth mspfwd.py[2397]: ERROR: Unhandled exception#012Traceback (most recent call last):#012  File "/opt/bsa/bin/mspfwd.py", line 2533, in main#012	Count:4
+
+mspfwd1-bth	/var/log/messages	 Apr 25 07:10:05 mspfwd1-bth mspfwd: 2022-04-25 07:10:05,119 - ERROR: Sftp error: sftp bthnz01 exit code 256	Count:9
+
+ mspfwd2-bth	/var/log/mspfwd.log	 Apr 26 18:33:17 mspfwd2-bth mspfwd.py[5589]: ERROR: Unhandled exception#012Traceback (most recent call last):#012  File "/opt/bsa/bin/mspfwd.py", line 2533, in main#012	Count:4
+
+mspfwd2-bth	/var/log/messages	 Apr 26 18:33:17 mspfwd2-bth mspfwd.py[5589]: ERROR: Unhandled exception#012Traceback (most recent call last):#012  File "/opt/bsa/bin/mspfwd.py", line 2533, in main#012	Count:5
+
+ mspfwd3-bth	/var/log/mspfwd.log	 Apr 26 18:33:17 mspfwd3-bth mspfwd.py[26094]: ERROR: Unhandled exception#012Traceback (most recent call last):#012  File "/opt/bsa/bin/mspfwd.py", line 2533, in main#012	Count:4
+
+mspfwd3-bth	/var/log/messages	 Apr 26 18:33:17 mspfwd3-bth mspfwd.py[26094]: ERROR: Unhandled exception#012Traceback (most recent call last):#012  File "/opt/bsa/bin/mspfwd.py", line 2533, in main#012	Count:5
+
+ sundance1-bth	/var/log/mspfwd.log	 Apr 26 18:59:16 sundance1-bth mspfwd.py[22938]: ERROR: Unhandled exception#012Traceback (most recent call last):#012  File "/opt/bsa/bin/mspfwd.py", line 2533, in main#012	Count:5
+
+sundance1-bth	/var/log/messages	 Apr 26 18:59:16 sundance1-bth mspfwd.py[22938]: ERROR: Unhandled exception#012Traceback (most recent call last):#012  File "/opt/bsa/bin/mspfwd.py", line 2533, in main#012	Count:6
+
+ sundance2-bth	/var/log/mspfwd.log	 Apr 26 18:59:16 sundance2-bth mspfwd.py[28295]: ERROR: Unhandled exception#012Traceback (most recent call last):#012  File "/opt/bsa/bin/mspfwd.py", line 2533, in main#012	Count:5
+
+sundance2-bth	/var/log/messages	 Apr 26 18:59:16 sundance2-bth mspfwd.py[28295]: ERROR: Unhandled exception#012Traceback (most recent call last):#012  File "/opt/bsa/bin/mspfwd.py", line 2533, in main#012	Count:6
+
+ sundance3-bth	/var/log/mspfwd.log	 Apr 26 18:59:17 sundance3-bth mspfwd.py[17743]: ERROR: Unhandled exception#012Traceback (most recent call last):#012  File "/opt/bsa/bin/mspfwd.py", line 2533, in main#012	Count:5
+
+sundance3-bth	/var/log/messages	 Apr 26 18:59:17 sundance3-bth mspfwd.py[17743]: ERROR: Unhandled exception#012Traceback (most recent call last):#012  File "/opt/bsa/bin/mspfwd.py", line 2533, in main#012	Count:6
+
+ blackfox1-bth	/var/log/mspfwd.log	 Apr 26 19:06:16 blackfox1-bth mspfwd.py[11556]: ERROR: Unhandled exception#012Traceback (most recent call last):#012  File "/opt/bsa/bin/mspfwd.py", line 2533, in main#012	Count:2
+
+blackfox1-bth	/var/log/messages	 Apr 26 19:06:16 blackfox1-bth mspfwd.py[11556]: ERROR: Unhandled exception#012Traceback (most recent call last):#012  File "/opt/bsa/bin/mspfwd.py", line 2533, in main#012	Count:3
+
+ blackfox2-bth	/var/log/mspfwd.log	 Apr 26 19:06:17 blackfox2-bth mspfwd.py[1511]: ERROR: Unhandled exception#012Traceback (most recent call last):#012  File "/opt/bsa/bin/mspfwd.py", line 2533, in main#012	Count:2
+
+blackfox2-bth	/var/log/messages	 Apr 26 19:06:17 blackfox2-bth mspfwd.py[1511]: ERROR: Unhandled exception#012Traceback (most recent call last):#012  File "/opt/bsa/bin/mspfwd.py", line 2533, in main#012	Count:3
+
+ blackfox3-bth	/var/log/mspfwd.log	 Apr 26 19:03:41 blackfox3-bth mspfwd.py[29095]: ERROR: Unhandled exception#012Traceback (most recent call last):#012  File "/opt/bsa/bin/mspfwd.py", line 2554, in main#012	Count:3
+
+blackfox3-bth	/var/log/messages	 Apr 26 19:03:41 blackfox3-bth mspfwd.py[29095]: ERROR: Unhandled exception#012Traceback (most recent call last):#012  File "/opt/bsa/bin/mspfwd.py", line 2554, in main#012	Count:5
+
