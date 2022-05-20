@@ -1,0 +1,73 @@
+---
+- name: merge users lists 
+  vars:
+    lst_vmusers: []
+  set_fact:
+    lst_vmusers: "{{ item + lst_vmusers }}"
+  loop: "{{ users }}"
+
+- name: add/remove the user
+  user:
+    name: "{{item.name}}"
+    state: "{{item.state}}"
+  with_items:
+    - "{{ lst_vmusers }}"
+
+- name: grant/remove sudo permission
+  lineinfile:
+    path: /etc/sudoers
+    insertafter: '^root[\s\t]*'
+    regexp: '^#?{{item.name}} ALL = NOPASSWD: ALL'
+    line: "{{item.name}} ALL = NOPASSWD: ALL"
+    state: "{{item.sudo}}"
+    validate: /usr/sbin/visudo -cf %s
+  with_items:
+    - "{{ lst_vmusers }}"
+
+- name: verify whether user exists
+  shell: /usr/bin/getent passwd "{{item.name}}" | awk -F":" '{print $1}'
+  changed_when: False
+  register: ui
+  when: not ansible_check_mode
+  with_items:
+    - "{{ lst_vmusers }}"
+
+- name: filter for the user names
+  vars: 
+    uf: []
+  set_fact:
+    uf: "{{uf }} + [ '{{ item.stdout}}' ]"
+  no_log: true
+  when: not ansible_check_mode
+  with_items: "{{ui.results}}"
+
+- name: add/remove SSH authorized key
+  authorized_key:
+    user: "{{item.0.name}}"
+    state: "{{item.0.state}}"
+    key: "{{lookup('file', lookup('env','PWD')+'/'+sshkey_dir+'/'+item.1)}}"
+  when: not ansible_check_mode and item.0.name in uf
+  with_subelements:
+    - "{{ lst_vmusers }}"
+    - key
+
+- name: add id_rsa_bsa.pub key to the root user's authorized_keys
+  authorized_key:
+    user: root
+    state: present
+    key: "{{ lookup('file', lookup('env','PWD')+'/'+sshkey_dir+'/id_rsa_bsa.pub') }}"
+    path: /root/.ssh/authorized_keys
+  when: not ansible_check_mode and group_name | regex_search('^firstnet(.*)$|^mspfwd(.*)$|^sundance(.*)$|^bbfwd(.*)$|^blackfox(.*)$')
+  ignore_errors: yes
+  tags: loganalyzer
+
+- name: add id_rsa_bsa.pub key to the bsa user's authorized_keys
+  authorized_key:
+    user: bsa
+    state: present
+    key: "{{ lookup('file', lookup('env','PWD')+'/'+sshkey_dir+'/id_rsa_bsa.pub') }}"
+    manage_dir: yes
+  when: not ansible_check_mode and group_name | regex_search('^access(.*)$')
+  ignore_errors: yes
+  tags: loganalyzer
+
