@@ -1,0 +1,520 @@
+#
+# system admin users list
+#
+sys_admin_users:
+- name: bg408p  #  Bishal Ghimire
+  state: present
+  sudo: present
+  key:
+    - bg408p.pub
+    - bg408p.pub2
+
+#
+# List of researchers who use the STEM servers
+#
+stem_users:
+- name: vs9593  # Vladislav Shkapenyuk
+  state: present
+  sudo: present
+  key:
+    - vs9593.pub
+- name: rp267p  # Rajesh Panta
+  state: present
+  sudo: present
+  key:
+    - rp267p.pub
+- name: ft1345   # Fred True
+  state: absent
+  sudo: absent
+  key:
+    - ft1345.pub
+    - ft1345.pub2
+#
+# ALIMAS users list for production support
+#
+alimas_users:
+- name: rp070w   # Rupam Pathak
+  state: present
+  sudo: present
+  key:
+    - rp070w.pub
+    - rp070w.pub2
+- name: jm8851  # Jeff Michaels
+  state: present
+  sudo: present
+  key:
+    - jm8851.pub
+- name: py1580  # Pranitha Yedudodla
+  state: absent
+  sudo: absent
+  key:
+    - py1580.pub
+- name: jp4745   # Jerry Power
+  state: present
+  sudo: present
+  key:
+    - jp4745.pub
+- name: pw3296  # Pam Wilmot
+  state: present
+  sudo: present
+  key:
+    - pw3296.pub
+- name: re0972   # Richard Eisele
+  state: present
+  sudo: present
+  key:
+    - re0972.pub
+- name: sc483y  # Steve Cook
+  state: present
+  sudo: present
+  key:
+    - sc483y.pub
+- name: sl761m   # Sean Lambert
+  state: present
+  sudo: present
+  key:
+    - sl761m.pub
+- name: sy8596  # Stan Young
+  state: present
+  sudo: present
+  key:
+    - sy8596.pub
+    - sy8596.pub2
+- name: fc8934   # Fernando Cacho
+  state: present
+  sudo: present
+  key:
+    - fc8934.pub
+- name: tt988g  # Tim Toben
+  state: present
+  sudo: present
+  key:
+    - tt988g.pub
+
+#
+# developers list
+#
+dev_users:
+- name: av804w # Anil Vangipurapu
+  state: present
+  sudo: present
+  key:
+    - av804w.pub
+- name: cs513e  # Clark Sims
+  state: present
+  sudo: present
+  key:
+    - cs513e.pub
+- name: rk4405  # Bob Kossey
+  state: present
+  sudo: present
+  key:
+    - rk4405.pub
+- name: pc623y # Chiluka Pruthvikraj
+  state: absent
+  sudo: absent
+  key:
+    - pc623y.pub
+- name: sa388x # Acharya, Sujan
+  state: absent
+  sudo: absent
+  key:
+    - sa388x.pub
+- name: sk3798 # Kosgi, Sai
+  state: present
+  sudo: present
+  key:
+    - sk3798.pub
+- name: dk1942 # Denis
+  state: absent
+  sudo: absent
+  key:
+    - dk1942.pub
+
+#
+# user list for av804w dev VMs
+#
+anil_users:
+- name: av804w # Anil Vangipurapu
+  fullname: "Anil, Vangipurapu"
+  state: present
+  sudo: present
+  key:
+    - av804w.pub
+#
+# user list for cs513e dev VMs
+#
+clark_users:
+- name: cs513e  # Clark Sims
+  fullname: "Sims, Clark"
+  state: present
+  sudo: present
+  key:
+    - cs513e.pub
+
+#
+# user list for sa388x dev VMs
+#
+sujan_users:
+- name: sa388x  # Acharya Sujan
+  fullname: "Sujan, Acharya"
+  state: absent
+  sudo: absent
+  key:
+    - sa388x.pub
+
+#
+# user list for sk3798 dev VMs
+#
+kosgi_users:
+- name: sk3798 # Kosgi Sai
+  fullname: "Sai, Kosgi"
+  state: present
+  sudo: present
+  key:
+    - sk3798.pub
+- name: av804w # Anil Vangipurapu
+  fullname: "Anil, Vangipurapu"
+  state: present
+  sudo: present
+  key:
+    - av804w.pub
+
+#
+# user list for rk4405 dev VMs
+#
+bob_users:
+- name: rk4405  # Bob Kossey
+  fullname: "Kossey, Robert"
+  state: present
+  sudo: present
+  key:
+    - rk4405.pub
+#
+# user list for pc623y dev VMs
+#
+pruthvik_users:
+- name: pc623y # Chiluka Pruthvikraj
+  fullname: "Chiluka, Pruthvikraj"
+  state: present
+  sudo: present
+  key:
+    - pc623y.pub
+#
+# Emir team VMs 
+#
+emir_users:
+- name: eh679n # Emir
+  state: present
+  sudo: present
+  key:
+    - eh679n.pub
+    - eh679n.pub2
+- name: kh721e # Kyung
+  state: present
+  sudo: present
+  key:
+    - kh721e.pub
+- name: ci111y # Horace
+  state: present
+  sudo: present
+  key:
+    - ci111y.pub
+
+#
+# Vlad team VMs
+#
+vlad_users:
+- name: vs9593  # Vladislav Shkapenyuk
+  state: present
+  sudo: present
+  key:
+    - vs9593.pub
+- name: tj1857  # Ted Johnson
+  state: present
+  sudo: present
+  key:
+    - tj1857.pub
+- name: dk3239  # Dave Kormann
+  state: present
+  sudo: absent
+  key:
+    - dk3239.pub
+
+#
+# Dan Murgu VMs
+#
+danmurgu_users:
+- name: dm700e   # Dan Murgu
+  state: present
+  sudo: present
+  key:
+    - dm700e.pub
+
+#
+# Kafka Topics
+#
+bsa_queues:
+  - queue: BB
+#    state: absent
+    partitions: 24
+    topic_retention_bytes: 2000000000000
+    replica_factor: 3
+    min_insync_replicas: 2
+    producers:
+      - "bb_producer"
+      - "bbfwd"
+    consumers:
+      - "bb_consumer"
+      - "bb_consumer2"
+      - "flood"
+      - "BB_BDMSP_consumer"
+      - "vs9593"
+      - "tj1857"
+      - "eh679n"
+      - "kh721e"
+      - "ci111y"
+  - queue: MSP
+#    state: absent
+    partitions: 24
+    topic_retention_bytes: 6000000000000
+    replica_factor: 3
+    min_insync_replicas: 2
+    producers:
+      - "msp_producer"
+      - "mspfwd"
+    consumers:
+      - "vs9593"
+      - "tj1857"
+      - "eh679n"
+      - "kh721e"
+      - "ci111y"
+      - "msp_consumer"
+      - "flood"
+      - "MSP_BDMSP_consumer"
+  - queue: Sundance
+#    state: absent
+    partitions: 24
+    topic_retention_bytes: 1000000000000
+    replica_factor: 3
+    min_insync_replicas: 2
+    producers:
+      - "sundance_producer"
+      - "sundance"
+    consumers:
+      - "sundance_consumer"
+  - queue: FirstNet
+#    state: absent
+    partitions: 24
+    topic_retention_bytes: 500000000000
+    replica_factor: 3
+    min_insync_replicas: 2
+    producers:
+      - "FirstNet_producer"
+      - "firstnet"
+    consumers:
+      - "FirstNet_consumer"
+      - "flood"
+      - "vs9593" 
+      - "tj1857"
+      - "eh679n"
+      - "kh721e"
+      - "ci111y"
+  - queue: BB_RAW
+#    state: absent
+    partitions: 24
+    topic_retention_bytes: 500000000000
+    replica_factor: 3
+    min_insync_replicas: 2
+    producers:
+      - "bb_producer"
+    consumers:
+      - "bb_producer"
+  - queue: KDR_360
+#    state: absent
+    partitions: 24
+    topic_retention_bytes: 100000000000
+    replica_factor: 3
+    min_insync_replicas: 2
+    producers:
+      - "vs9593"
+      - "tj1857"
+      - "eh679n"
+      - "kh721e"
+      - "ci111y"
+      - "msp_consumer:absent"
+      - "flood:absent"
+      - "MSP_BDMSP_consumer:absent"
+    consumers:
+      - "kdr"
+  - queue: KDR_130
+#    state: absent
+    partitions: 24
+    topic_retention_bytes: 100000000000
+    replica_factor: 3
+    min_insync_replicas: 2
+    producers:
+      - "vs9593"
+      - "tj1857"
+      - "eh679n"
+      - "kh721e"
+      - "ci111y"
+      - "msp_consumer:absent"
+      - "flood:absent"
+      - "MSP_BDMSP_consumer:absent"
+    consumers:
+      - "kdr"
+  - queue: KDR_450
+#    state: absent
+    partitions: 24
+    topic_retention_bytes: 100000000000
+    replica_factor: 3
+    min_insync_replicas: 2
+    producers:
+      - "vs9593"
+      - "tj1857"
+      - "eh679n"
+      - "kh721e"
+      - "ci111y"
+      - "msp_consumer:absent"
+      - "flood:absent"
+      - "MSP_BDMSP_consumer:absent"
+    consumers:
+      - "kdr"
+
+#
+# Kafka consumer groups
+#
+bsa_groups:
+  - group: BB
+    consumers:
+      - "bb_consumer"
+      - "bb_consumer2"
+  - group: BB2
+    consumers:
+      - "bb_consumer"
+      - "bb_consumer2"
+  - group: BB3
+    consumers:
+      - "bb_consumer"
+      - "bb_consumer2"
+  - group: MSP
+    consumers:
+      - "msp_consumer"
+  - group: Sundance
+    consumers:
+      - "sundance_consumer"
+  - group: FirstNet
+    consumers:
+      - "FirstNet_consumer"
+  - group: BB_RAW
+    consumers:
+      - "bb_producer"
+  - group: KDR_360_GROUP
+    consumers:
+      - "kdr"
+  - group: KDR_130_GROUP
+    consumers:
+      - "kdr"
+  - group: KDR_450_GROUP
+    consumers:
+      - "kdr"
+  - group: MSP_eh679n_GROUP
+    consumers:
+      - "eh679n"
+      - "kh721e"
+      - "ci111y"
+  - group: BB_eh679n_GROUP
+    consumers:
+      - "eh679n"
+      - "kh721e"
+      - "ci111y"
+  - group: FirstNet_eh679n_GROUP
+    consumers:
+      - "eh679n"
+      - "kh721e"
+      - "ci111y"
+  - group: MSP_vs9593_GROUP
+    consumers:
+      - "vs9593" 
+      - "tj1857"
+  - group: BB_vs9593_GROUP
+    consumers:
+      - "vs9593" 
+      - "tj1857"
+  - group: FirstNet_vs9593_GROUP
+    consumers:
+      - "vs9593" 
+      - "tj1857"
+  - group: MSP_flood_GROUP
+    consumers:
+      - "flood"
+  - group: BB_flood_GROUP
+    consumers:
+      - "flood"
+  - group: FirstNet_flood_GROUP
+    consumers:
+      - "flood"
+  - group: MSP_BDMSP_GROUP
+    consumers:
+      - "MSP_BDMSP_consumer"
+  - group: BB_BDMSP_GROUP
+    consumers:
+      - "BB_BDMSP_consumer"
+
+servers3:
+    - [10.241.101.1, "bsap1-{{ loc }}"]
+    - [10.241.101.2, "bsap2-{{ loc }}"]
+    - [10.241.101.3, "bsap3-{{ loc }}"]
+
+servers4:
+    - [10.241.101.1, "bsap1-{{ loc }}"]
+    - [10.241.101.2, "bsap2-{{ loc }}"]
+    - [10.241.101.3, "bsap3-{{ loc }}"]
+    - [10.241.101.4, "bsap4-{{ loc }}"]
+
+servers5:
+    - [10.241.101.1, "bsap1-{{ loc }}"]
+    - [10.241.101.2, "bsap2-{{ loc }}"]
+    - [10.241.101.3, "bsap3-{{ loc }}"]
+    - [10.241.101.4, "bsap4-{{ loc }}"]
+    - [10.241.101.5, "bsap5-{{ loc }}"]
+
+servers6:
+    - [10.241.101.1, "bsap1-{{ loc }}"]
+    - [10.241.101.2, "bsap2-{{ loc }}"]
+    - [10.241.101.3, "bsap3-{{ loc }}"]
+    - [10.241.101.4, "bsap4-{{ loc }}"]
+    - [10.241.101.5, "bsap5-{{ loc }}"]
+    - [10.241.101.6, "bsap6-{{ loc }}"]
+
+servers7:
+    - [10.241.101.1, "bsap1-{{ loc }}"]
+    - [10.241.101.2, "bsap2-{{ loc }}"]
+    - [10.241.101.3, "bsap3-{{ loc }}"]
+    - [10.241.101.4, "bsap4-{{ loc }}"]
+    - [10.241.101.5, "bsap5-{{ loc }}"]
+    - [10.241.101.6, "bsap6-{{ loc }}"]
+    - [10.241.101.7, "bsap7-{{ loc }}"]
+
+servers8:
+    - [10.241.101.1, "bsap1-{{ loc }}"]
+    - [10.241.101.2, "bsap2-{{ loc }}"]
+    - [10.241.101.3, "bsap3-{{ loc }}"]
+    - [10.241.101.4, "bsap4-{{ loc }}"]
+    - [10.241.101.5, "bsap5-{{ loc }}"]
+    - [10.241.101.6, "bsap6-{{ loc }}"]
+    - [10.241.101.7, "bsap7-{{ loc }}"]
+    - [10.241.101.8, "bsap8-{{ loc }}"]
+
+# mspfwd logging
+log_level: INFO
+zoo_timeout: 600
+kafka_sock_timeout: 5
+kafka_reinit_timer: 1800
+corrupt_file:
+  create_copy: true
+  email: true
+  sender: bsa@research.att.com
+  receiver: 
+    - DL-BSA@att.com
