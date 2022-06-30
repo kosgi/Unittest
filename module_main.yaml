@@ -1,0 +1,5 @@
+- name: parse the user and process
+  become: false
+  connection: local
+  user_process:
+    users: "{{dev_users}}"
